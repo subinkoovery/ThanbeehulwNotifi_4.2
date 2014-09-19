@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/event_background"
+    tools:context="subu.dreamseed.thanbeehul.mainHome"
+    android:id="@+id/MainG">
+
+
+    <RelativeLayout
+        android:background="@color/event_main"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/relativeLayoutT">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="GALLERY"
+            android:id="@+id/fragEvent_NameT"
+            android:textColor="#ffa2b44a"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/actionT"
+            android:layout_alignParentRight="true"
+            android:clickable="true" />
+    </RelativeLayout>
+    <RelativeLayout
+
+
+        android:background="@color/event_main"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/relativeLayout2T"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Sponsor Name"
+            android:id="@+id/sponsorT"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="sponsor brand"
+            android:id="@+id/textView2T"
+            android:layout_below="@+id/sponsorT"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Address line 1,Address line 1,Address line 1"
+            android:id="@+id/addresT"
+            android:layout_below="@+id/textView2T"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Web/Phone :"
+            android:id="@+id/textView3T"
+            android:layout_below="@+id/addresT"
+            android:layout_alignRight="@+id/textView2T"
+            android:layout_alignEnd="@+id/textView2T" />
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/next_prev"
+        android:textSize="32dp"
+        android:id="@+id/textView22"
+        android:layout_below="@id/relativeLayoutT"
+        android:layout_centerHorizontal="true" />
+
+
+    <android.support.v4.view.ViewPager
+
+       android:layout_width="fill_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/pager"
+        android:layout_above="@id/relativeLayout2T"
+        android:layout_below="@+id/textView22"></android.support.v4.view.ViewPager>
+
+
+
+</RelativeLayout>

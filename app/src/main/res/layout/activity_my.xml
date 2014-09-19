@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+       android:background="@color/event_background"
+    tools:context=".MyActivity"
+    android:id="@+id/Mainlinear">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/event_main"
+        android:id="@+id/relativeLayout2"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Thanbeehul Islam"
+
+            android:gravity="center"
+            android:paddingLeft="5dp"
+
+            android:textSize="32dp"
+            android:textColor="#fff"
+            android:id="@+id/eventName"
+            android:layout_weight="1.14" />
+
+        <ImageView
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mosque"
+            android:id="@+id/imageView2"
+            android:paddingRight="8dp"
+            android:paddingBottom="3dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/eventName"
+            android:layout_toEndOf="@+id/eventName" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_weight="16.61"
+        android:layout_width="291dp"
+        android:layout_height="290dp"
+        android:id="@+id/imageView"
+        android:visibility="visible"
+        android:src="@drawable/event_main"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="104dp"
+        android:layout_height="34dp"
+        android:text="NEXT"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:onClick="next"
+        android:textColor="@color/white"
+        android:background="@color/event_next"
+        android:id="@+id/button"
+        android:layout_below="@+id/imageView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="11.09" />
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:background="@color/event_main"
+        android:id="@+id/relativeLayout3">
+
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="powered by DreamSeed"
+            android:id="@+id/fragEvent_Name"
+
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="dreamseed.in"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:typeface="serif" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

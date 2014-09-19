@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent"
+    tools:context="subu.dreamseed.thanbeehul.AboutFragment"
+    android:id="@+id/MainAbout">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="/about"
+        android:id="@+id/about"
+
+        android:layout_gravity="left|top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="48dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="
+        fsgfdfgdfgdfgdgfdgddgdgdgdgdgdgdgdgd
+        dfgddfg  dfgdfg d dfgd  dgdfgdg
+        gdgdfg dgf d dgfd g
+        dgfdgdfgdfgdfgdfgdgd gd dfgdfg  dfgdfg
+        gdgdgdgdg dg dg
+       "
+        android:id="@+id/textView2"
+        android:layout_below="@+id/about"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
